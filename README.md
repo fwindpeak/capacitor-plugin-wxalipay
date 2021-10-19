@@ -15,10 +15,10 @@ npx cap sync
 
 <docgen-index>
 
-- [`echo(...)`](#echo)
-- [`wxPayRequest(...)`](#wxpayrequest)
-- [`aliPayRequest(...)`](#alipayrequest)
-- [Interfaces](#interfaces)
+* [`echo(...)`](#echo)
+* [`wxPayRequest(...)`](#wxpayrequest)
+* [`aliPayRequest(...)`](#alipayrequest)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -28,56 +28,62 @@ npx cap sync
 ### echo(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+echo(options: { value: string; }) => any
 ```
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
 | **`options`** | <code>{ value: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>any</code>
 
----
+--------------------
+
 
 ### wxPayRequest(...)
 
 ```typescript
-wxPayRequest(options: WxParams) => Promise<any>
+wxPayRequest(options: WxParams) => any
 ```
 
 | Param         | Type                                          |
 | ------------- | --------------------------------------------- |
 | **`options`** | <code><a href="#wxparams">WxParams</a></code> |
 
-**Returns:** <code>Promise&lt;any&gt;</code>
+**Returns:** <code>any</code>
 
----
+--------------------
+
 
 ### aliPayRequest(...)
 
 ```typescript
-aliPayRequest(options: AlipayParams) => Promise<any>
+aliPayRequest(options: AlipayParams) => any
 ```
 
 | Param         | Type                                                  |
 | ------------- | ----------------------------------------------------- |
 | **`options`** | <code><a href="#alipayparams">AlipayParams</a></code> |
 
-**Returns:** <code>Promise&lt;any&gt;</code>
+**Returns:** <code>any</code>
 
----
+--------------------
+
 
 ### Interfaces
+
 
 #### WxParams
 
 | Prop            | Type                |
 | --------------- | ------------------- |
-| **`mch_id`**    | <code>string</code> |
-| **`prepay_id`** | <code>string</code> |
-| **`nonce`**     | <code>string</code> |
+| **`appId`**     | <code>string</code> |
+| **`mchId`**     | <code>string</code> |
+| **`prepayId`**  | <code>string</code> |
+| **`noncestr`**  | <code>string</code> |
 | **`timestamp`** | <code>number</code> |
 | **`sign`**      | <code>string</code> |
+
 
 #### AlipayParams
 

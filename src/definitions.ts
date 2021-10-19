@@ -1,7 +1,8 @@
 export interface WxParams {
-  mch_id: string;
-  prepay_id: string;
-  nonce: string;
+  appId: string;
+  mchId: string;
+  prepayId: string;
+  noncestr: string;
   timestamp: number;
   sign: string;
 }

@@ -17,7 +17,8 @@ buildscript {
 
 apply plugin: 'com.android.library'
 
-def wxPayPackageName = "your.package.id // your package id
+//TODO:change to your package name
+def wxPayPackageName = "<your.package.name>" // your package name
 
 android {
   compileSdkVersion project.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : 30
@@ -54,10 +55,6 @@ repositories {
   google()
   jcenter()
   mavenCentral()
-  // 支付宝 SDK AAR 包所需的配置
-  flatDir {
-    dirs 'libs'
-  }
 }
 
 
@@ -71,5 +68,5 @@ dependencies {
 
   implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
 
-  api(name: 'alipaySdk-15.7.9-20200727142846', ext: 'aar')
+  implementation files('libs/alipaySdk-15.7.9-20200727142846.aar')
 }
