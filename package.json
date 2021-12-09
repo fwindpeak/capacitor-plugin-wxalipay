@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-wxalipay",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "capacitor 3 plugin for wechatPay and alipay",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

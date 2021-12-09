@@ -4,6 +4,11 @@ capacitor 3 plugin for wechatPay and alipay
 
 forked from [veluxa/capacitor-plugin-pay](https://github.com/veluxa/capacitor-plugin-pay)
 
+## 配置
+
+- 修改项目中的配置文件`capacitor.config.json`，增加微信 appid 配置`plugins.wxalipay.wxappId`
+- 修改项目中插件的`build.gradle`文件, `def wxPayPackageName = "<your.package.name>"`改为自己的包名
+
 ## Install
 
 ```bash
