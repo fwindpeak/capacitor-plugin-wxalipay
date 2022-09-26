@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">wxalipay-plugin-example</string>
+    <string name="title_activity_main">wxalipay-plugin-example</string>
+    <string name="package_name">com.fwindpeak.wxalipayexample</string>
+    <string name="custom_url_scheme">com.fwindpeak.wxalipayexample</string>
+</resources>

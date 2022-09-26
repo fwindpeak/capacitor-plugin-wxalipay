@@ -1,0 +1,7 @@
+{
+  "name": "wxalipay-plugin-example",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

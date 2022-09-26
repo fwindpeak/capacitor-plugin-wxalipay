@@ -15,6 +15,7 @@ export class WxalipayWeb extends WebPlugin implements WxalipayPlugin {
   }
 
   async wxPayRequest(options: WxParams): Promise<any> {
+    console.log('wxPayRequest from web');
     return options;
   }
 
